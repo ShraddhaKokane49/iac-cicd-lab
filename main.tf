@@ -11,3 +11,4 @@ resource "local_file" "student_doc" {
   filename = "${path.module}/hello_terraform.txt"
   content  = "Welcome to Terraform!"
 }
+# test change
