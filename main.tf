@@ -1,4 +1,6 @@
 terraform {
+  required_version = ">= 1.7.0"
+
   required_providers {
     local = {
       source  = "hashicorp/local"
@@ -6,9 +8,3 @@ terraform {
     }
   }
 }
-
-resource "local_file" "student_doc" {
-  filename = "${path.module}/hello_terraform.txt"
-  content  = "Welcome to Terraform!"
-}
-# test change
